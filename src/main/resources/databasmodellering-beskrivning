@@ -1,0 +1,16 @@
+Jag började med att identifiera entiteterna som vi har använt oss av samt lade till profile,
+comment och tag då jag skulle bygga ut applikationen med de funktionerna.
+När jag lagt till de entiteterna så har vi user, message, profile, comment och tag.
+Sedan identifierade jag vilka attribut som behövdes för att kunna bygga ut applikationen enligt beskrivningen.
+Till profile behövdes attributen bild-url och beskrivning.
+Till comment behövdes attributen text och tidsmärkning.
+Till tag behövdes ett tag-namn.
+Efter det så identifierade jag relationerna mellan entiteterna.
+
+Sedan gick jag vidare till logisk utgångspunkt där jag skapade relationerna för tabellerna.
+
+När relationerna var identifierade så gjorde jag den logiska modellen för tabellerna där jag
+skrev ner vad attributen i de olika tabellerna skulle heta på engelska och valde primary keys samt foreign keys
+och skapade en sammanställd primary key för message_tags då det är en many-to-many.
+Efter det skapade jag en full logisk modell, exempel: Message(message_id, text, subject, timestamp, user_id) till alla tabeller.
+Sedan skapade jag en fysisk modell där jag skapade alla tables som jag byggt fram genom de två tidigare modellerna.
